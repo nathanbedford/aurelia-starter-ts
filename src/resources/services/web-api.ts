@@ -1,3 +1,6 @@
+/// <reference path="../../../node_modules/aurelia-fetch-client/doc/whatwg-fetch.d.ts" />
+import {HttpClient} from 'aurelia-fetch-client';
+
 let latency = 200;
 let id = 0;
 
@@ -45,6 +48,13 @@ let contacts = [
 
 export class WebAPI {
   isRequesting = false;
+
+  getPostList(){
+    let client = new HttpClient();
+
+    return client.fetch('https://jsonplaceholder.typicode.com/posts')
+      .then(response => response.json());
+  }
   
   getContactList(){
     this.isRequesting = true;

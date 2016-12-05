@@ -1,3 +1,6 @@
 <template>
-  Welcome to the ${msg}
+  <h2 class="text-center">Welcome to the ${msg}</h2>
+  <ul>
+    <li repeat.for="post of posts">${post.title}</li>
+  </ul>
 </template>

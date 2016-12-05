@@ -9,6 +9,8 @@
   },
   "globalDependencies": {
     "jquery": "registry:dt/jquery#1.10.0+20160929162922",
-    "nprogress": "registry:dt/nprogress#0.0.0+20161003122759"
+    "nprogress": "registry:dt/nprogress#0.0.0+20161003122759",
+    "url-search-params-typing": "github:RomkeVdMeulen/URLSearchParams",
+    "whatwg-fetch": "registry:dt/whatwg-fetch#0.0.0+20161004182750"
   }
 }
