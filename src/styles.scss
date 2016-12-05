@@ -8,8 +8,16 @@ a:focus {
   outline: none;
 }
 
+@media (min-width: 768px){
+  body ul.nav.navbar-nav{
+    float: right;
+    padding-right: 50px;
+  }
+}
+
 .navbar-nav li.loader {
     margin: 12px 24px 0 6px;
+
 }
 
 .no-selection {
