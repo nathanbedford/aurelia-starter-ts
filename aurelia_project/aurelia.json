@@ -117,6 +117,7 @@
           "aurelia-templating",
           "aurelia-templating-binding",
           "text",
+          "whatwg-fetch",
           "jquery",
           {
             "name": "bootstrap",
