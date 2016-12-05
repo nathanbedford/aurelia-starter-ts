@@ -19,13 +19,17 @@ export class App {
         className = this.router.currentInstruction.config.title;
       }
 
-      className = className.toLowerCase();
-      className = className.replace(/&/g, 'and');
-      className = className.replace(/\s+/g, '-');
-      className = className + '-route';
+      if(className){
+        className = className
+          .toLowerCase()
+          .replace(/&/g, 'and')
+          .replace(/\s+/g, '-');
 
-      console.log('Checking...');
-      return className;
+        className = className + '-route';
+
+        return className;
+      }
+
     }
   }
 
